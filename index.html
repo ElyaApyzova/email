@@ -19,6 +19,7 @@
         border: 0;
        } 
 
+
     .wrapper {
         width: 100%;
         table-layout: fixed;
@@ -52,19 +53,34 @@
     .three-columns {
         text-align: center;
         font-size: 0;
-        padding: 15px 0 20px;;
+        padding: 15px 0 10px;
     }
 
     .three-columns .column {
         width: 100%;
-        max-width: 130px;
+        max-width: 117px;
         display: inline-block;
         vertical-align: top;
         text-align: center;
+        
+    }
+
+    .three-columns .column:not(:last-child) {
+        margin-right: 16px;
     }
 
     .three-columns .padding {
-        padding: 20px 0;
+        padding: 10px 0;
+    }
+
+    .three-columns .content {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .text {
+        text-align: center;
+        padding-bottom: 8px;
     }
 
     </style>
@@ -135,7 +151,7 @@
                                 <table class="column">
                                     <tr>
                                       <td class="padding">
-                                        <table>
+                                        <table class="content">
                                           <tr>
                                               <td>
                                                   <a href="#"> <img src="./images/medium-watermelon.png" width="107" alt="" style="max-width: 107px;"></a>
@@ -144,9 +160,9 @@
                                           <tr>
                                               <td>
                                                   <p style="font-family: 'Circe', sans-serif; font-size: 40px; line-height: 47px; color: #2E2E2E; font-weight: 800; margin: 0;">
-                                                      10%
+                                                      8%
                                                   </p>
-                                                  <p style="margin: 0; color: #2E2E2E;">До 19:00</p>
+                                                  <p style="margin: 0; color: #2E2E2E;">До 22:00</p>
                                               </td>
                                           </tr>
                                         </table>
@@ -157,7 +173,7 @@
                                   <table class="column">
                                     <tr>
                                       <td class="padding">
-                                        <table>
+                                        <table class="content">
                                           <tr>
                                               <td>
                                                   <a href="#"><img src="./images/small-watermelon.png" width="70" alt="" style="max-width: 70px;"></a>
@@ -181,10 +197,16 @@
                 </td>
             </tr>
             <tr>
-              <td align="center" style="padding-bottom: 10px; font-family: 'Arial', sans-serif; font-weight: 400; font-size: 14px; line-height: 16px; color: #2E2E2E;">Промокод</td>
+              <td class="text">
+                <table width="100%">
+                  <p style="font-family: 'Arial', sans-serif; font-weight: 400; font-size: 14px; line-height: 16px; color: #2E2E2E;">  
+                Промокод
+            </p>
+            </table>
+              </td>
             </tr>
             <tr>
-              <td align="center" style="padding-top: 10px; padding-bottom: 30px;">
+              <td align="center" style="padding-bottom: 30px;">
                 <a href="#" style="padding: 11px 20px; text-decoration: none; border: 1px dashed #000000; color: #2E2E2E; font-family: 'Arial', sans-serif; font-size: 28px; font-weight: 700; line-height: 32px;">GOODBYELETO</a>
               </td>
             </tr>
